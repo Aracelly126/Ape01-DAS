@@ -19,7 +19,8 @@
                         CASE</span>
                 </a>
 
-                <div class="flex w-auto items-center justify-between" id="mobile-menu-2">
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex w-auto items-center justify-between">
                     <ul class="flex flex-row space-x-8 font-medium">
                         <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
                                 href="#intro">Introducción</a></li>
@@ -30,6 +31,29 @@
                         <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
                                 href="#icase">Entornos I-CASE</a></li>
                         <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
+                                href="#icase-intelligent">I-CASE Inteligente</a></li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white focus:outline-none" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu -->
+                <div class="hidden md:hidden absolute top-full left-0 w-full bg-gray-900 border-t border-gray-700" id="mobile-menu-2">
+                    <ul class="flex flex-col py-4">
+                        <li><a class="block px-4 py-2 text-gray-400 hover:bg-gray-800 hover:text-white"
+                                href="#intro">Introducción</a></li>
+                        <li><a class="block px-4 py-2 text-gray-400 hover:bg-gray-800 hover:text-white"
+                                href="#integracion">Niveles de Integración</a></li>
+                        <li><a class="block px-4 py-2 text-gray-400 hover:bg-gray-800 hover:text-white"
+                                href="#taxonomia">Taxonomía</a></li>
+                        <li><a class="block px-4 py-2 text-gray-400 hover:bg-gray-800 hover:text-white"
+                                href="#icase">Entornos I-CASE</a></li>
+                        <li><a class="block px-4 py-2 text-gray-400 hover:bg-gray-800 hover:text-white"
                                 href="#icase-intelligent">I-CASE Inteligente</a></li>
                     </ul>
                 </div>
