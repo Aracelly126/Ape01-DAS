@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas CASE: Integración y Taxonomía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./resources/icon_white.png" type="image/png">
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+    <header class="w-full sticky top-0 z-50">
+        <nav class="border-gray-200 bg-gray-900 py-5">
+            <div class="mx-auto flex max-w-screen-xl flex-wrap items</nav>-center justify-between px-4">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="./resources/icon_white.png" alt="Icono CASE" class="h-8 w-8">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Herramientas
+                        CASE</span>
+                </a>
+
+                <div class="flex w-auto items-center justify-between" id="mobile-menu-2">
+                    <ul class="flex flex-row space-x-8 font-medium">
+                        <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
+                                href="#intro">Introducción</a></li>
+                        <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
+                                href="#integracion">Niveles de Integración</a></li>
+                        <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
+                                href="#taxonomia">Taxonomía</a></li>
+                        <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
+                                href="#ejemplos-case">Ejemplos CASE</a></li>
+                        <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
+                                href="#icase">Entornos I-CASE</a></li>
+                        <li><a class="block border-0 p-0 text-gray-400 hover:bg-transparent hover:text-white"
+                                href="#icase-intelligent">I-CASE Inteligente</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="relative bg-gray-900">
+        <div class="absolute inset-x-0 bottom-0">
+            <svg viewBox="0 0 224 12" fill="currentColor" class="-mb-1 w-full text-white" preserveAspectRatio="none">
+                <path
+                    d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z">
+                </path>
+            </svg>
+        </div>
+        <div class="mx-auto px-24 py-20 max-w-screen-xl">
+            <div class="relative max-w-2xl mx-auto text-center">
+                <h2 class="mb-6 text-center font-sans text-4xl font-bold tracking-tight text-white leading-none">
+                    Herramientas CASE: Integración y Taxonomía</h2>
+                <p class="mb-8 text-center text-lg text-indigo-200">Computer-Aided Software Engineering:
+                    Niveles de integración, clasificación funcional y entornos integrados
+                    para el desarrollo de software moderno</p>
+
+                <p class="mb-8 max-w-md text-xs tracking-wide text-indigo-100 mx-auto"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introducción -->
+    <section id="intro" class="py-16 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">
+                    ¿Por qué es importante la integración CASE?
+                </h2>
+                <div class="flex lg:flex-row flex-col lg:justify-center items-center lg:p-8 p-4 font-sans">
+                    <!-- Interoperabilidad -->
+                    <div
+                        class="lg:w-[23rem] bg-white w-full border-2 lg:border-r-0 border-gray-200 p-5 rounded-2xl lg:rounded-r-none">
+                        <div class="pb-3 mb-4 border-b border-gray-200">
+                            <div class="text-xs text-slate-800 mb-2">NIVEL BÁSICO</div>
+                            <h3 class="text-4xl m-0 font-normal text-blue-600">Interoperabilidad</h3>
+                        </div>
+                        <div class="flex items-center mb-2">
+
+                            Intercambio de datos fluido
+                        </div>
+                        <div class="flex items-center mb-2">
+
+                            Formatos estándar
+                        </div>
+                        <div class="flex items-center mb-5">
+
+                            Compatibilidad entre etapas
+                        </div>
+                    </div>
+
+                    <!-- Coordinación -->
+                    <div
+                        class="lg:w-[23rem] bg-white w-full lg:my-0 my-4 border-2 border-gray-200 p-5 rounded-2xl lg:shadow-lg">
+                        <div class="pb-3 mb-4 border-b border-gray-200">
+                            <div class="text-xs text-slate-800 mb-2">NIVEL INTERMEDIO</div>
+                            <h3 class="text-4xl m-0 font-normal text-purple-600">Coordinación</h3>
+                        </div>
+                        <div class="flex items-center mb-2">
+
+                            Gestión de equipos
+                        </div>
+                        <div class="flex items-center mb-2">
+
+                            Proyectos complejos
+                        </div>
+                        <div class="flex items-center mb-2">
+
+                            Sincronización de tareas
+                        </div>
+                        <div class="flex items-center mb-2">
+
+                            Comunicación fluida
+                        </div>
+                        <div class="flex items-center mb-5">
+
+                            Colaboración efectiva
+                        </div>
+
+                    </div>
+
+                    <!-- Control -->
+                    <div
+                        class="lg:w-[23rem] bg-white w-full border-2 lg:border-l-0 border-gray-200 p-5 rounded-2xl lg:rounded-l-none">
+                        <div class="pb-3 mb-4 border-b border-gray-200">
+                            <div class="text-xs text-slate-800 mb-2">NIVEL AVANZADO</div>
+                            <h3 class="text-4xl m-0 font-normal text-green-600">Control</h3>
+                        </div>
+                        <div class="flex items-center mb-2">
+
+                            Planificación avanzada
+                        </div>
+                        <div class="flex items-center mb-2">
+
+                            Monitoreo en tiempo real
+                        </div>
+                        <div class="flex items-center mb-5">
+
+                            Gestión de calidad
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Niveles de Integración -->
+    <section id="integracion" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Niveles de Integración de Herramientas
+                    CASE</h2>
+
+                <!-- Grid de Niveles -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <!-- Nivel 1: Herramienta Individual -->
+                    <div
+                        class="bg-white border-2 border-red-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:border-red-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-red-600">Herramienta Individual</h3>
+                                <p class="text-sm text-gray-600">Soluciones Puntuales</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Estas herramientas son eficientes para necesidades puntuales, pero su integración es
+                            limitada.
+                            La mayoría permite intercambio de datos en formatos estándar.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs">Funcionalidad
+                                específica</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs">Integración
+                                limitada</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs">Formatos
+                                estándar</span>
+                        </div>
+                    </div>
+
+                    <!-- Nivel 2: Intercambio de Datos -->
+                    <div
+                        class="bg-white border-2 border-orange-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-orange-600">Intercambio de Datos</h3>
+                                <p class="text-sm text-gray-600">Comunicación Básica</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Las herramientas individuales que generan salidas en formatos estándar permiten un nivel
+                            básico
+                            de integración, facilitando la comunicación entre herramientas.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs">Formatos
+                                estándar</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs">Comunicación
+                                básica</span>
+                            <span
+                                class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs">Interoperabilidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nivel Central Destacado -->
+                <div class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-2xl p-8 mb-12 shadow-lg">
+                    <div class="flex items-center justify-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-6">
+                            <span class="text-white font-bold text-2xl">3</span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-3xl font-bold mb-2">Puentes y Asociaciones</h3>
+                            <p class="text-lg opacity-90">Herramientas Complementarias Conectadas</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                            <h4 class="font-semibold mb-2">Sinergia</h4>
+                            <p class="text-sm opacity-90">Trabajo conjunto entre herramientas</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                            <h4 class="font-semibold mb-2">Puentes</h4>
+                            <p class="text-sm opacity-90">Conexiones específicas entre análisis y código</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4">
+                            <h4 class="font-semibold mb-2">Resultados Robustos</h4>
+                            <p class="text-sm opacity-90">Mejor que herramientas individuales</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Niveles Avanzados -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Nivel 4: Fuente Única -->
+                    <div
+                        class="bg-white border-2 border-blue-200 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 hover:border-blue-300">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">4</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-blue-600">Fuente Única</h3>
+                                <p class="text-sm text-gray-600">Paquete Integrado</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Un único proveedor ofrece un paquete de herramientas CASE integradas. Aunque eficiente,
+                            este enfoque suele tener una arquitectura cerrada.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Un solo
+                                proveedor</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Arquitectura
+                                cerrada</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Eficiente</span>
+                        </div>
+                    </div>
+
+                    <!-- Nivel 5: EAIP -->
+                    <div
+                        class="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-2xl p-6 shadow-lg border-2 border-purple-300">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">5</span>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold">EAIP</h3>
+                                <p class="text-sm opacity-90">Entorno de Apoyo Integrado a Proyectos</p>
+                            </div>
+                        </div>
+                        <p class="leading-relaxed mb-4 opacity-95">
+                            El nivel más alto de integración, utiliza estándares para que las herramientas
+                            CASE sean compatibles entre sí, garantizando una interoperabilidad fluida.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-xs">Máxima
+                                integración</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-xs">Estándares</span>
+                            <span class="px-3 py-1 bg-white bg-opacity-20 rounded-full text-xs">Interoperabilidad
+                                total</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progreso Visual -->
+                <div class="mt-12 text-center">
+                    <h4 class="text-lg font-semibold text-gray-700 mb-6">Evolución de la Integración</h4>
+                    <div class="flex justify-center items-center space-x-4 overflow-x-auto">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-sm font-bold">1</span>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-sm font-bold">2</span>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-sm font-bold">3</span>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                                <span class="text-white text-sm font-bold">4</span>
+                            </div>
+                            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </div>
+                        <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                            <span class="text-white text-sm font-bold">5</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-4">De herramientas aisladas a entornos completamente integrados
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Taxonomía Principal -->
+    <section id="taxonomia" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Taxonomía de Herramientas CASE por Función</h2>
+
+                <div class="grid grid-cols-2 gap-8 mb-12">
+                    <!-- Herramientas de Gestión -->
+                    <div class="bg-gray-800 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-400">Herramientas de Gestión</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-400 pl-4">
+                                <h4 class="font-semibold text-lg">Ingeniería de Procesos de Negocio</h4>
+                                <p class="text-gray-300 text-sm">Modelado de requisitos estratégicos y metamodelos</p>
+                            </div>
+                            <div class="border-l-4 border-green-400 pl-4">
+                                <h4 class="font-semibold text-lg">Planificación de Proyectos</h4>
+                                <p class="text-gray-300 text-sm">Estimación de costos, esfuerzo y planificación de
+                                    tareas</p>
+                            </div>
+                            <div class="border-l-4 border-yellow-400 pl-4">
+                                <h4 class="font-semibold text-lg">Análisis de Riesgos</h4>
+                                <p class="text-gray-300 text-sm">Identificación, mitigación y gestión de riesgos</p>
+                            </div>
+                            <div class="border-l-4 border-purple-400 pl-4">
+                                <h4 class="font-semibold text-lg">Seguimiento de Requisitos</h4>
+                                <p class="text-gray-300 text-sm">Gestión sistemática de requisitos del cliente</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas de Desarrollo -->
+                    <div class="bg-gray-800 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-green-400">Herramientas de Desarrollo</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-400 pl-4">
+                                <h4 class="font-semibold text-lg">Análisis y Diseño</h4>
+                                <p class="text-gray-300 text-sm">Modelos de datos, funciones y comportamiento</p>
+                            </div>
+                            <div class="border-l-4 border-green-400 pl-4">
+                                <h4 class="font-semibold text-lg">Programación</h4>
+                                <p class="text-gray-300 text-sm">Compiladores, editores, depuradores y entornos</p>
+                            </div>
+                            <div class="border-l-4 border-yellow-400 pl-4">
+                                <h4 class="font-semibold text-lg">Construcción de Prototipos</h4>
+                                <p class="text-gray-300 text-sm">Definición de pantallas, datos e informes</p>
+                            </div>
+                            <div class="border-l-4 border-purple-400 pl-4">
+                                <h4 class="font-semibold text-lg">Desarrollo Web</h4>
+                                <p class="text-gray-300 text-sm">Creación de páginas web con contenido dinámico</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8">
+                    <!-- Herramientas de Calidad -->
+                    <div class="bg-gray-800 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-purple-400">Herramientas de Calidad</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-400 pl-4">
+                                <h4 class="font-semibold text-lg">Control de Calidad</h4>
+                                <p class="text-gray-300 text-sm">Auditorías de código y verificación de estándares</p>
+                            </div>
+                            <div class="border-l-4 border-green-400 pl-4">
+                                <h4 class="font-semibold text-lg">Métricas y Gestión</h4>
+                                <p class="text-gray-300 text-sm">Evaluación de productividad y calidad del software</p>
+                            </div>
+                            <div class="border-l-4 border-yellow-400 pl-4">
+                                <h4 class="font-semibold text-lg">Análisis Estático</h4>
+                                <p class="text-gray-300 text-sm">Generación de casos de prueba desde código fuente</p>
+                            </div>
+                            <div class="border-l-4 border-purple-400 pl-4">
+                                <h4 class="font-semibold text-lg">Análisis Dinámico</h4>
+                                <p class="text-gray-300 text-sm">Pruebas de cobertura y flujo de ejecución</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Herramientas de Soporte -->
+                    <div class="bg-gray-800 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-yellow-400">Herramientas de Soporte</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-400 pl-4">
+                                <h4 class="font-semibold text-lg">Documentación</h4>
+                                <p class="text-gray-300 text-sm">Creación y gestión de documentos del proyecto</p>
+                            </div>
+                            <div class="border-l-4 border-green-400 pl-4">
+                                <h4 class="font-semibold text-lg">Gestión de Configuración</h4>
+                                <p class="text-gray-300 text-sm">Control de versiones y gestión de cambios</p>
+                            </div>
+                            <div class="border-l-4 border-yellow-400 pl-4">
+                                <h4 class="font-semibold text-lg">Gestión de Bases de Datos</h4>
+                                <p class="text-gray-300 text-sm">Repositorio CASE y sistemas de datos</p>
+                            </div>
+                            <div class="border-l-4 border-purple-400 pl-4">
+                                <h4 class="font-semibold text-lg">Reingeniería</h4>
+                                <p class="text-gray-300 text-sm">Ingeniería inversa y reestructuración de código</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herramientas Especializadas -->
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold mb-8 text-center text-orange-400">Herramientas Especializadas</h3>
+                    <div class="grid grid-cols-4 gap-6">
+                        <div class="bg-red-500 p-6 rounded-xl text-center">
+                            <h4 class="font-bold text-lg mb-3">PRO/SIM</h4>
+                            <p class="text-sm opacity-90">Construcción de prototipos y simulaciones</p>
+                        </div>
+                        <div class="bg-orange-500 p-6 rounded-xl text-center">
+                            <h4 class="font-bold text-lg mb-3">Interfaz</h4>
+                            <p class="text-sm opacity-90">Desarrollo y diseño de interfaces de usuario</p>
+                        </div>
+                        <div class="bg-green-500 p-6 rounded-xl text-center">
+                            <h4 class="font-bold text-lg mb-3">Pruebas</h4>
+                            <p class="text-sm opacity-90">Integración, gestión y pruebas cliente/servidor</p>
+                        </div>
+                        <div class="bg-blue-500 p-6 rounded-xl text-center">
+                            <h4 class="font-bold text-lg mb-3">Sistema</h4>
+                            <p class="text-sm opacity-90">Software de red y entornos de trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ejemplos Reales de Herramientas CASE -->
+
+    <section id="ejemplos-case" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Ejemplos Prácticos de Uso de Herramientas
+                    CASE</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Ejemplo 1: Pruebas de Autenticación y Seguridad en Banca Móvil -->
+                    <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-4 text-blue-700">Pruebas de Autenticación y Seguridad en Banca
+                            Móvil</h3>
+                        <div class="mb-2">
+                            <span class="font-semibold text-blue-600">Herramienta utilizada:</span>
+                            <span class="text-gray-700">BrowserStack</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-blue-600">Contexto:</span>
+                            <span class="text-gray-700">Un banco lanza una nueva app móvil y debe garantizar la
+                                seguridad de las transacciones y la protección de datos sensibles.</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-blue-600">Pasos realizados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Se identifican los requisitos regulatorios (RGPD, PCI-DSS) y de autenticación (PIN,
+                                    biometría, CAPTCHA).</li>
+                                <li>Se diseñan casos de prueba para validar el acceso seguro, la gestión de sesiones y
+                                    el cifrado de datos.</li>
+                                <li>Se ejecutan pruebas automáticas y manuales en dispositivos reales usando
+                                    BrowserStack Private Device Cloud.</li>
+                                <li>Se simulan intentos de acceso no autorizado y se validan los mecanismos de bloqueo y
+                                    alerta.</li>
+                                <li>Se documentan los resultados y se corrigen vulnerabilidades detectadas.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-blue-600">Resultados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>La app cumple con los estándares de seguridad y privacidad.</li>
+                                <li>Se previenen accesos no autorizados y fraudes.</li>
+                                <li>El banco puede demostrar cumplimiento normativo ante auditorías.</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.browserstack.com/guide/how-to-test-banking-domain-applications"
+                            target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Referencia: Cómo
+                            probar aplicaciones de dominio bancario (BrowserStack)</a>
+                        <span
+                            class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs">Seguridad</span>
+                    </div>
+                    <!-- Ejemplo 2: Pruebas de Rendimiento y Transacciones en Banca Web -->
+                    <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-4 text-green-700">Pruebas de Rendimiento y Transacciones en
+                            Banca Web</h3>
+                        <div class="mb-2">
+                            <span class="font-semibold text-green-600">Herramienta utilizada:</span>
+                            <span class="text-gray-700">BrowserStack</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-green-600">Contexto:</span>
+                            <span class="text-gray-700">Una plataforma bancaria web debe garantizar la disponibilidad y
+                                rapidez de las operaciones para miles de usuarios simultáneos.</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-green-600">Pasos realizados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Se definen casos de prueba para transferencias, pagos y consultas de saldo bajo
+                                    diferentes cargas.</li>
+                                <li>Se ejecutan pruebas de rendimiento y estrés en BrowserStack, simulando miles de
+                                    transacciones concurrentes.</li>
+                                <li>Se monitorean los tiempos de respuesta y la estabilidad del sistema en condiciones
+                                    de alta demanda.</li>
+                                <li>Se validan los mecanismos de recuperación ante fallos y la integridad de los datos.
+                                </li>
+                                <li>Se ajusta la infraestructura y el código para optimizar el rendimiento.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-green-600">Resultados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>La plataforma soporta grandes volúmenes de usuarios sin caídas.</li>
+                                <li>Las transacciones se procesan de forma rápida y segura.</li>
+                                <li>Se minimizan los tiempos de inactividad y se mejora la experiencia del usuario.</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.browserstack.com/guide/how-to-test-banking-domain-applications"
+                            target="_blank" rel="noopener" class="text-green-600 underline text-sm">Referencia: Cómo
+                            probar aplicaciones de dominio bancario (BrowserStack)</a>
+                        <span
+                            class="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Rendimiento</span>
+                    </div>
+                    <!-- Ejemplo 3: Simulación de retraso de red en pruebas de API -->
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-4 text-yellow-700">Simulación de retraso de red en pruebas de
+                            API</h3>
+                        <div class="mb-2">
+                            <span class="font-semibold text-yellow-600">Herramienta utilizada:</span>
+                            <span class="text-gray-700">Requestly (BrowserStack)</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-yellow-600">Contexto:</span>
+                            <span class="text-gray-700">Un equipo de QA necesita validar cómo responde una aplicación
+                                web ante diferentes condiciones de red (latencia, congestión, pérdida de
+                                paquetes).</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-yellow-600">Pasos realizados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Se configura Requestly para simular retrasos en las solicitudes y respuestas HTTP.
+                                </li>
+                                <li>Se ejecutan pruebas automatizadas con Selenium para verificar el comportamiento de
+                                    la aplicación bajo diferentes escenarios de latencia.</li>
+                                <li>Se analizan los resultados para identificar cuellos de botella, errores de timeout y
+                                    degradación de la experiencia de usuario.</li>
+                                <li>Se ajustan los mecanismos de reintento y manejo de errores en la aplicación.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-yellow-600">Resultados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>La aplicación responde correctamente ante redes lentas y congestión.</li>
+                                <li>Se identifican y corrigen problemas de timeout y manejo de errores.</li>
+                                <li>Se mejora la experiencia del usuario en condiciones adversas.</li>
+                            </ul>
+                        </div>
+                        <a href="https://www.browserstack.com/guide/understanding-network-delay-request" target="_blank"
+                            rel="noopener" class="text-yellow-600 underline text-sm">Referencia: BrowserStack - Network
+                            Delay Request</a>
+                        <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs">Pruebas
+                            de red</span>
+                    </div>
+                <!-- Ejemplo 4: Visual Paradigm for UML -->
+                    <div class="bg-pink-50 border border-pink-200 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-4 text-pink-700">Visual Paradigm for UML</h3>
+                        <div class="mb-2">
+                            <span class="font-semibold text-pink-600">Herramienta utilizada:</span>
+                            <span class="text-gray-700">Visual Paradigm</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-pink-600">Contexto:</span>
+                            <span class="text-gray-700">Una universidad quiere desarrollar un sistema de gestión de estudiantes. 
+                                El equipo de desarrollo puede usar Visual Paradigm para modelar el sistema antes de implementarlo.</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-pink-600">Pasos realizados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Identifica actores: Estudiante, Profesor, Administrador.
+                                </li>
+                                <li>Define casos de uso: Registrar estudiante, Inscribir en curso, Generar calificaciones.</li>
+                                <li>Modela las clases del sistema: Estudiante, Curso, Profesor, Inscripción.</li>
+                                <li>Define atributos y métodos de cada clase, así como relaciones (por ejemplo, Estudiante se inscribe en Curso).</li>
+                                <li>Visual Paradigm permite generar plantillas de código en Java, C# o Python a partir del diagrama de clases, acelerando el desarrollo.</li>
+                                <li>La herramienta crea un documento detallado del sistema, útil para equipos grandes y mantenimiento futuro.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-pink-600">Resultados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Un diseño completo del sistema, listo para pasar a la implementación con menos errores y mayor claridad en los roles y procesos.</li>
+                            </ul>
+                        </div>
+                        <a href="https://online.visual-paradigm.com/es/community/share/use-case-diagram-for-university-curriculum-system-rkgpgbboa" target="_blank"
+                            rel="noopener" class="text-pink-600 underline text-sm">Referencia: Visual Paradigm Online</a>
+                        <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs">Use Case Diagram For University Curriculum System</span>
+                    </div>
+
+                    <!-- Ejemplo 5: Visual Paradigm for UML -->
+                    <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-4 text-red-700">Portal de Estudiantes</h3>
+                        <div class="mb-2">
+                            <span class="font-semibold text-red-600">Herramienta utilizada:</span>
+                            <span class="text-gray-700">Visual Paradigm</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-red-600">Contexto:</span>
+                            <span class="text-gray-700">un sistema de gestión académica en línea que sirve como un portal centralizado para estudiantes, 
+                                profesores y administradores de una institución educativa. 
+                                </span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-red-600">Pasos realizados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Definir los actores del sistema.
+                                </li>
+                                <li>Definir los casos de uso (funcionalidades).</li>
+                                <li>Establecer relaciones entre actores y casos de uso.</li>
+                                <li>Organizar el diagrama visualmente.</li>
+                                <li>Revisión y ajuste.</li>
+                            </ul>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-red-600">Resultados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Facilitar la interacción de los usuarios con el sistema, permitiendo que accedan, gestionen y visualicen información académica de manera segura y eficiente.</li>
+                            </ul>
+                        </div>
+                        <a href="https://online.visual-paradigm.com/es/community/share/student-portal-usecase-le188zvry" target="_blank"
+                            rel="noopener" class="text-red-600 underline text-sm">Referencia: Visual Paradigm Online</a>
+                        <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs">Student Portal Usecase</span>
+                    </div>
+                    <!-- Ejemplo 6 -->
+                    <div class="bg-brown-50 border border-brown-200 rounded-xl p-6">
+                        <h3 class="text-xl font-bold mb-4 text-brown-700">Sistema de Biblioteca en Línea</h3>
+                        <div class="mb-2">
+                            <span class="font-semibold text-brown-600">Herramienta utilizada:</span>
+                            <span class="text-gray-700">Visual Paradigm</span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-brown-600">Contexto:</span>
+                            <span class="text-gray-700">Una universidad quiere implementar un sistema de biblioteca en línea que permita a los estudiantes consultar libros disponibles, 
+                                reservarlos y a los bibliotecarios gestionar inventario y préstamos. 
+                                El sistema busca optimizar la gestión de recursos y mejorar la experiencia de los usuarios. 
+                                </span>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-brown-600">Pasos realizados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Estudiante/Usuario: consulta catálogo, reserva libros, renueva préstamos.
+                                </li>
+                                <li>Bibliotecario: registra libros nuevos, gestiona préstamos, administra reservas.</li>
+                                <li>Administrador: gestiona usuarios, configura reglas del sistema (multas, tiempos de préstamo).</li>
+                            </ul>
+                        </div>
+                        <div class="mb-2">
+                            <span class="font-semibold text-brown-600">Resultados:</span>
+                            <ul class="list-disc ml-6 text-gray-700">
+                                <li>Un diagrama UML donde: Los actores (Estudiante, Bibliotecario, Administrador) están a los lados, 
+                                    Los casos de uso (reservar libro, registrar libro, gestionar préstamos, etc.) están en el centro,
+                                    Las relaciones include/extend muestran dependencias entre funcionalidades.</li>
+                            </ul>
+                        </div>
+                        <a href="https://online.visual-paradigm.com/es/community/share/online-library-system-le188zvry" target="_blank"
+                            rel="noopener" class="text-brown-600 underline text-sm">Referencia: Visual Paradigm Online</a>
+                        <span class="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs">Online library System</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entornos Integrados CASE -->
+    <section id="icase" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Entornos Integrados CASE (I-CASE)</h2>
+
+                <div class="grid grid-cols-2 gap-12 items-center mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-600">La Verdadera Potencia de CASE</h3>
+                        <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                            La verdadera potencia de CASE radica en su integración. Las herramientas integradas son
+                            esenciales para que los equipos de software desarrollen, organicen y controlen sus
+                            productos de trabajo de manera efectiva.
+                        </p>
+                    </div>
+                    <div class="bg-blue-600 text-white p-8 rounded-2xl">
+                        <h4 class="text-xl font-semibold mb-4">Características I-CASE</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-white rounded-full mr-3"></div>
+                                <span class="text-sm">Representaciones consistentes</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-white rounded-full mr-3"></div>
+                                <span class="text-sm">Interfaces estandarizadas</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-white rounded-full mr-3"></div>
+                                <span class="text-sm">Comunicación homogénea</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 bg-white rounded-full mr-3"></div>
+                                <span class="text-sm">Compatibilidad multiplataforma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficios de I-CASE -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Beneficios de los Entornos Integrados
+                    </h3>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div
+                            class="bg-green-50 border border-green-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-green-800">Transferencia Fluida</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Transferencia fluida de información entre herramientas y etapas del proceso de
+                                desarrollo.
+                            </p>
+                        </div>
+
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-blue-800">Reducción de Esfuerzo</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Reducción del esfuerzo en gestión de configuración, control de calidad y producción de
+                                documentos.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-purple-50 border border-purple-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-purple-800">Mayor Control</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Mayor control del proyecto mediante mejor planificación, monitoreo y comunicación.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-orange-50 border border-orange-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-orange-800">Mejor Coordinación</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Mejor coordinación entre equipos en proyectos grandes y complejos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desafíos de I-CASE -->
+                <div>
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Desafíos de la Integración CASE</h3>
+                    <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8">
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-4 text-lg">Retos Técnicos</h4>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-red-500 rounded-full mr-3 mt-2"></span>
+                                        Necesidad de representaciones consistentes
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-red-500 rounded-full mr-3 mt-2"></span>
+                                        Interfaces estandarizadas requeridas
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-red-500 rounded-full mr-3 mt-2"></span>
+                                        Mecanismos homogéneos de comunicación
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-4 text-lg">Estado Actual</h4>
+                                <div class="bg-white p-4 rounded-lg border border-gray-200">
+                                    <p class="text-gray-700 text-sm leading-relaxed">
+                                        Aunque los entornos I-CASE han evolucionado más lentamente de lo esperado,
+                                        están ganando fuerza con el tiempo. La compatibilidad con diversas plataformas
+                                        de hardware y sistemas operativos sigue siendo un desafío importante.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- I-CASE Inteligente -->
+    <section id="icase-intelligent" class="py-16 bg-gradient-to-br from-indigo-50 to-purple-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Intelligent Computer Aided Software Engineering (I-CASE)</h2>
+
+                <!-- ¿Qué es I-CASE? -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-6 text-indigo-600">¿Qué es I-CASE?</h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            I-CASE representa la evolución natural de las herramientas CASE tradicionales, incorporando técnicas de Inteligencia Artificial (IA) para potenciar las capacidades de desarrollo de software. Esta integración permite automatizar procesos complejos, mejorar la toma de decisiones y optimizar la calidad del software desarrollado.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-indigo-50 p-6 rounded-lg">
+                                <h4 class="font-semibold text-indigo-800 mb-3">Características Principales</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2"></span>
+                                        Aprendizaje automático integrado
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2"></span>
+                                        Análisis predictivo avanzado
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2"></span>
+                                        Automatización inteligente
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2"></span>
+                                        Adaptación dinámica
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-purple-50 p-6 rounded-lg">
+                                <h4 class="font-semibold text-purple-800 mb-3">Beneficios Inmediatos</h4>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2"></span>
+                                        Reducción de errores humanos
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2"></span>
+                                        Optimización de procesos
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2"></span>
+                                        Mejora en la productividad
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2"></span>
+                                        Calidad superior del software
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inteligencia Artificial aplicada a la Ingeniería de Software -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-6 text-purple-600">Inteligencia Artificial aplicada a la Ingeniería de Software</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg">
+                            <h4 class="text-xl font-semibold mb-4 text-gray-800">Técnicas de IA Integradas</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-blue-400 pl-4">
+                                    <h5 class="font-semibold text-lg text-blue-600">Machine Learning</h5>
+                                    <p class="text-gray-600 text-sm">Algoritmos de aprendizaje para predicción de defectos y optimización de código</p>
+                                </div>
+                                <div class="border-l-4 border-green-400 pl-4">
+                                    <h5 class="font-semibold text-lg text-green-600">Procesamiento de Lenguaje Natural</h5>
+                                    <p class="text-gray-600 text-sm">Análisis de requisitos y generación automática de documentación</p>
+                                </div>
+                                <div class="border-l-4 border-purple-400 pl-4">
+                                    <h5 class="font-semibold text-lg text-purple-600">Sistemas Expertos</h5>
+                                    <p class="text-gray-600 text-sm">Toma de decisiones basada en conocimiento experto</p>
+                                </div>
+                                <div class="border-l-4 border-orange-400 pl-4">
+                                    <h5 class="font-semibold text-lg text-orange-600">Redes Neuronales</h5>
+                                    <p class="text-gray-600 text-sm">Reconocimiento de patrones en código y diseño</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-500 to-indigo-600 text-white p-8 rounded-2xl">
+                            <h4 class="text-xl font-semibold mb-4">Aplicaciones Prácticas</h4>
+                            <div class="space-y-4">
+                                <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                                    <h5 class="font-semibold mb-2">Análisis de Código</h5>
+                                    <p class="text-sm opacity-90">Detección automática de bugs y vulnerabilidades de seguridad</p>
+                                </div>
+                                <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                                    <h5 class="font-semibold mb-2">Optimización de Rendimiento</h5>
+                                    <p class="text-sm opacity-90">Sugerencias inteligentes para mejorar la eficiencia del código</p>
+                                </div>
+                                <div class="bg-white bg-opacity-10 p-4 rounded-lg">
+                                    <h5 class="font-semibold mb-2">Estimación de Esfuerzo</h5>
+                                    <p class="text-sm opacity-90">Predicciones precisas del tiempo y recursos necesarios</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aplicaciones en diferentes áreas -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-6 text-center text-gray-800">Aplicaciones en diferentes áreas</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white border-2 border-blue-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-blue-300">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-center text-gray-800 mb-3">Desarrollo de Software</h4>
+                            <p class="text-gray-600 text-sm text-center">Automatización de pruebas, refactorización inteligente y generación de código</p>
+                        </div>
+
+                        <div class="bg-white border-2 border-green-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-green-300">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-center text-gray-800 mb-3">Gestión de Proyectos</h4>
+                            <p class="text-gray-600 text-sm text-center">Predicción de riesgos, optimización de recursos y planificación automática</p>
+                        </div>
+
+                        <div class="bg-white border-2 border-purple-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-purple-300">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-center text-gray-800 mb-3">Educación y Formación</h4>
+                            <p class="text-gray-600 text-sm text-center">Sistemas de tutoría inteligente y evaluación automática de código</p>
+                        </div>
+
+                        <div class="bg-white border-2 border-orange-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-orange-300">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-center text-gray-800 mb-3">Mantenimiento de Software</h4>
+                            <p class="text-gray-600 text-sm text-center">Análisis de impacto de cambios y predicción de puntos de falla</p>
+                        </div>
+
+                        <div class="bg-white border-2 border-red-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-red-300">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-center text-gray-800 mb-3">Seguridad Informática</h4>
+                            <p class="text-gray-600 text-sm text-center">Detección de vulnerabilidades y análisis de amenazas en tiempo real</p>
+                        </div>
+
+                        <div class="bg-white border-2 border-teal-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:border-teal-300">
+                            <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mb-4 mx-auto">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-9 0V1m10 3V1m0 3l1 1v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5l1-1z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-center text-gray-800 mb-3">Calidad de Software</h4>
+                            <p class="text-gray-600 text-sm text-center">Métricas automáticas y evaluación continua de la calidad del código</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clasificación de I-CASE -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-6 text-center text-gray-800">Clasificación de I-CASE</h3>
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xl font-semibold mb-4 text-blue-600">Por Nivel de Inteligencia</h4>
+                                <div class="space-y-4">
+                                    <div class="bg-blue-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-blue-800">I-CASE Básico</h5>
+                                        <p class="text-sm text-gray-600">Automatización de tareas rutinarias y análisis simple</p>
+                                    </div>
+                                    <div class="bg-green-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-green-800">I-CASE Intermedio</h5>
+                                        <p class="text-sm text-gray-600">Aprendizaje supervisado y recomendaciones inteligentes</p>
+                                    </div>
+                                    <div class="bg-purple-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-purple-800">I-CASE Avanzado</h5>
+                                        <p class="text-sm text-gray-600">IA autónoma y toma de decisiones complejas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-4 text-purple-600">Por Área de Aplicación</h4>
+                                <div class="space-y-4">
+                                    <div class="bg-indigo-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-indigo-800">I-CASE de Desarrollo</h5>
+                                        <p class="text-sm text-gray-600">Enfoque en la creación y construcción de software</p>
+                                    </div>
+                                    <div class="bg-orange-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-orange-800">I-CASE de Gestión</h5>
+                                        <p class="text-sm text-gray-600">Optimización de procesos y recursos del proyecto</p>
+                                    </div>
+                                    <div class="bg-red-50 p-4 rounded-lg">
+                                        <h5 class="font-semibold text-red-800">I-CASE de Calidad</h5>
+                                        <p class="text-sm text-gray-600">Aseguramiento y mejora continua de la calidad</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desafíos y limitaciones -->
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-center text-gray-800">Desafíos y limitaciones</h3>
+                    <div class="bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-2xl p-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xl font-semibold mb-4 text-orange-400">Desafíos Técnicos</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                                        Complejidad en el entrenamiento de modelos de IA
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                                        Necesidad de grandes volúmenes de datos de calidad
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                                        Integración con sistemas legacy existentes
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></span>
+                                        Mantenimiento y actualización de modelos de IA
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold mb-4 text-blue-400">Limitaciones Actuales</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>
+                                        Dependencia de datos históricos para predicciones
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>
+                                        Dificultad para explicar decisiones de IA complejas
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>
+                                        Preocupaciones éticas y de privacidad de datos
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>
+                                        Costos elevados de implementación y mantenimiento
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-8 p-6 bg-white bg-opacity-10 rounded-lg">
+                            <h4 class="text-lg font-semibold mb-3 text-green-400">Perspectivas Futuras</h4>
+                            <p class="text-sm opacity-90 leading-relaxed">
+                                A pesar de los desafíos actuales, I-CASE representa el futuro de la ingeniería de software.
+                                Con el avance continuo de las tecnologías de IA y el aumento de datos disponibles,
+                                se espera que estas limitaciones se reduzcan significativamente en los próximos años,
+                                permitiendo una adopción más amplia y efectiva de I-CASE en la industria del software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloques Básicos CASE -->
+    <section id="bloques-basicos" class="py-16 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Construcción de Bloques Básicos para CASE
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-600">Arquitectura CASE</h3>
+                        <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                            CASE puede ser sencillo (una herramienta para una actividad) o complejo (entorno con base de
+                            datos, personas, hardware, etc.).
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-3 h-3 bg-blue-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700">Plataforma hardware y sistema operativo</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-3 h-3 bg-green-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700">Servicios de portabilidad</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-3 h-3 bg-purple-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700">Marco de integración</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-3 h-3 bg-orange-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700">Herramientas CASE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-8 rounded-2xl">
+                        <h4 class="text-xl font-semibold mb-4">Estado Actual</h4>
+                        <p class="text-sm opacity-95 leading-relaxed">
+                            La mayoría de herramientas CASE actuales son soluciones puntuales, no integradas.
+                            La verdadera potencia se logra mediante la integración completa.
+                        </p>
+                        <div class="mt-6 p-4 bg-white bg-opacity-10 rounded-lg">
+                            <p class="text-xs opacity-90">
+                                <strong>Nota:</strong> Las herramientas individuales son eficientes para necesidades
+                                específicas,
+                                pero la integración ofrece beneficios superiores para proyectos complejos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Objetivos de CASE -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-center mb-8 text-gray-800">Objetivos Principales de CASE</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Prototipos y Desarrollo</h4>
+                            <p class="text-gray-600 text-sm">Facilitar la realización de prototipos y el desarrollo
+                                conjunto de aplicaciones</p>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Mantenimiento</h4>
+                            <p class="text-gray-600 text-sm">Simplificar el mantenimiento de los programas</p>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Documentación</h4>
+                            <p class="text-gray-600 text-sm">Mejorar y estandarizar la documentación</p>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Reutilización</h4>
+                            <p class="text-gray-600 text-sm">Facilitar la reutilización de componentes software</p>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Metodologías</h4>
+                            <p class="text-gray-600 text-sm">Permitir la aplicación práctica de metodologías
+                                estructuradas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitectura de Integración -->
+    <section id="arquitectura" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Arquitectura de Integración CASE</h2>
+
+                <div class="bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-2xl p-8 mb-12">
+                    <h3 class="text-2xl font-bold text-center mb-8">Modelo de Marco de Referencia</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-white bg-opacity-10 rounded-lg p-6 text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-2">Capa de Interfaz</h4>
+                            <p class="text-sm opacity-90">Kit de herramientas y protocolo de presentación</p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 rounded-lg p-6 text-center">
+                            <div
+                                class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-2">Capa de Herramientas</h4>
+                            <p class="text-sm opacity-90">Servicios de gestión de herramientas</p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 rounded-lg p-6 text-center">
+                            <div
+                                class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-2">Gestión de Objetos</h4>
+                            <p class="text-sm opacity-90">Integración de herramientas con repositorio</p>
+                        </div>
+
+                        <div class="bg-white bg-opacity-10 rounded-lg p-6 text-center">
+                            <div
+                                class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="font-semibold text-lg mb-2">Repositorio</h4>
+                            <p class="text-sm opacity-90">Base de datos y control de acceso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Requisitos I-CASE -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Requisitos Clave</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700 text-sm">Compartir información entre herramientas</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700 text-sm">Seguir cambios en elementos relacionados</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-purple-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700 text-sm">Control de versiones y gestión de
+                                    configuración</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-orange-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700 text-sm">Acceso directo a herramientas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Funcionalidades Avanzadas</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-red-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700 text-sm">Apoyo automatizado al modelo de procesos</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700 text-sm">Personalización de interfaz</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-pink-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700 text-sm">Soporte a comunicación entre ingenieros</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-teal-500 rounded-full mr-3 mt-2"></div>
+                                <span class="text-gray-700 text-sm">Recopilación de métricas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repositorio CASE -->
+    <section id="repositorio" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">El Repositorio CASE</h2>
+                <p class="text-center text-lg mb-12 text-gray-300 max-w-3xl mx-auto">
+                    Centro de almacenamiento de información de ingeniería de software, ahora una base de datos en lugar
+                    de una persona.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-gray-800 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-400">Funciones Principales</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-400 pl-4">
+                                <h4 class="font-semibold text-lg">Integridad de Datos</h4>
+                                <p class="text-gray-300 text-sm">Validación, consistencia, modificaciones en cascada</p>
+                            </div>
+                            <div class="border-l-4 border-green-400 pl-4">
+                                <h4 class="font-semibold text-lg">Información Compartida</h4>
+                                <p class="text-gray-300 text-sm">Acceso multiusuario, bloqueo</p>
+                            </div>
+                            <div class="border-l-4 border-yellow-400 pl-4">
+                                <h4 class="font-semibold text-lg">Integración Datos-Herramientas</h4>
+                                <p class="text-gray-300 text-sm">Modelo de datos, gestión de configuración</p>
+                            </div>
+                            <div class="border-l-4 border-purple-400 pl-4">
+                                <h4 class="font-semibold text-lg">Integración Datos-Datos</h4>
+                                <p class="text-gray-300 text-sm">Relaciones entre objetos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6 text-green-400">Características Especiales</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-400 pl-4">
+                                <h4 class="font-semibold text-lg">Estructuras Sofisticadas</h4>
+                                <p class="text-gray-300 text-sm">Modelos de datos avanzados</p>
+                            </div>
+                            <div class="border-l-4 border-green-400 pl-4">
+                                <h4 class="font-semibold text-lg">Imposición de Integridad</h4>
+                                <p class="text-gray-300 text-sm">Validación automática de datos</p>
+                            </div>
+                            <div class="border-l-4 border-yellow-400 pl-4">
+                                <h4 class="font-semibold text-lg">Interfaz Semántica</h4>
+                                <p class="text-gray-300 text-sm">Acceso inteligente a la información</p>
+                            </div>
+                            <div class="border-l-4 border-purple-400 pl-4">
+                                <h4 class="font-semibold text-lg">Gestión de Procesos</h4>
+                                <p class="text-gray-300 text-sm">Control de flujos de trabajo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenidos del Repositorio -->
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold text-center mb-8">Contenidos del Repositorio</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center">
+                            <h4 class="font-semibold mb-2">Problema</h4>
+                            <p class="text-sm opacity-90">Requisitos y especificaciones</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center">
+                            <h4 class="font-semibold mb-2">Dominio</h4>
+                            <p class="text-sm opacity-90">Contexto del sistema</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center">
+                            <h4 class="font-semibold mb-2">Solución</h4>
+                            <p class="text-sm opacity-90">Diseños y implementaciones</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center">
+                            <h4 class="font-semibold mb-2">Proceso</h4>
+                            <p class="text-sm opacity-90">Metodologías y flujos</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center">
+                            <h4 class="font-semibold mb-2">Plan del Proyecto</h4>
+                            <p class="text-sm opacity-90">Estrategias y cronogramas</p>
+                        </div>
+                        <div class="bg-white bg-opacity-10 rounded-lg p-4 text-center">
+                            <h4 class="font-semibold mb-2">Contexto Organizativo</h4>
+                            <p class="text-sm opacity-90">Entorno empresarial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusión -->
+    <section class="py-16 bg-gradient-to-br from-gray-800 to-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-8">Conclusión</h2>
+                <p class="text-xl mb-8 leading-relaxed">
+                    La integración de herramientas CASE es fundamental para maximizar los beneficios del desarrollo
+                    asistido por computadora. Desde herramientas individuales hasta entornos completamente integrados,
+                    cada nivel ofrece ventajas específicas para diferentes contextos de desarrollo de software.
+                </p>
+                <div class="grid grid-cols-3 gap-8 mb-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-400 mb-2">5</div>
+                        <p class="text-gray-300">Niveles de integración</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-green-400 mb-2">20+</div>
+                        <p class="text-gray-300">Categorías funcionales</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-400 mb-2">I-CASE</div>
+                        <p class="text-gray-300">Futuro de la integración</p>
+                    </div>
+                </div>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    La selección adecuada del nivel de integración y las herramientas apropiadas según su función
+                    es clave para el éxito de cualquier proyecto de desarrollo de software moderno.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu-2');
+            menu.classList.toggle('hidden');
+        }
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-opacity-95', 'backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 0.8s ease-out forwards;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</body>
+
+</html>
